@@ -1,0 +1,23 @@
+section {
+  min-height: calc(100vh);
+}
+
+.layer {
+  position: absolute;
+  background-color: #1abc9ce6;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.6s;
+}
+.layer i {
+  font-size: 80px;
+  color: white;
+}
+
+.layer:hover {
+  opacity: 2;
+}
