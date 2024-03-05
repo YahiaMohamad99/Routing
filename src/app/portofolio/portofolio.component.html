@@ -1,81 +1,16 @@
 <section class="">
-  <div class="">
-    <div class="row justify-content-center">
-      <div class="text-center m-5">
-        <h2>Portofolio COMPONENT</h2>
-        <app-star></app-star>
-      </div>
-    </div>
-
-    <div class="row g-5 p-5">
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
+  <app-star [componenetName]="'PORTOFOLIO COMPONENT'" [starColor]="'#2c3e50'">
+  </app-star>
+  <div class="container">
+    <div class="row g-5 py-5">
+      <div class="col-lg-4 col-md-6" *ngFor="let image of sources">
+        <div class="position-relative overflow-hidden rounded-3">
           <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port1.png"
+            class="w-100 rounded-3"
+            [src]="image"
             alt="photo of project card "
           />
-          <div class="layer d-flex justify-content-center align-items-center" >
-            <i class="fa-solid fa-plus "></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
-          <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port2.png"
-            alt="photo of project card "
-          />
-          <div class="layer d-flex justify-content-center align-items-center" >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
-          <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port3.png"
-            alt="photo of project card "
-          />
-          <div class="layer d-flex justify-content-center align-items-center" >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
-          <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port1.png"
-            alt="photo of project card "
-          />
-          <div class="layer d-flex justify-content-center align-items-center" >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
-          <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port2.png"
-            alt="photo of project card "
-          />
-          <div class="layer d-flex justify-content-center align-items-center" >
-            <i class="fa-solid fa-plus"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class=" position-relative overflow-hidden rounded-3">
-          <img
-            class="w-100 rounded-3 "
-            src="assets/imgs/port3.png"
-            alt="photo of project card "
-          />
-          <div class="layer d-flex justify-content-center align-items-center" >
+          <div class="layer d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
