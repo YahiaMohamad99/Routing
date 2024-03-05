@@ -1,6 +1,6 @@
 :root{
-    --main-color:red;
-    --second-color:blue;
+    --main-color:#2c3e50;
+    --second-color:#1abc9c;
 }
 
 
@@ -9,5 +9,8 @@
 }
 
 .second-color{
-    color: var(--second-color);
+    background-color: var(--second-color);
+}
+section{
+    min-height: 100vh;
 }

@@ -1,6 +1,5 @@
 section {
-    background-color: #1abc9c;
-    height: calc(100vh - 110px);
+    background-color: var(--second-color);
   }
   
   h2{
